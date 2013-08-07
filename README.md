@@ -2,7 +2,7 @@
 
 ```shell
 
-keytool -genkey -alias zode64-keyalg RSA -keypass changeit -storepass changeit -keystore keystore.jks
+keytool -genkey -alias zode64 -keyalg RSA -keypass changeit -storepass changeit -keystore keystore.jks
 
 name and surname (CN) : [host/domain name]
 
