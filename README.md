@@ -12,6 +12,12 @@ keytool -export -alias zode64 -storepass changeit -file server.cer -keystore key
 
 keytool -import -v -trustcacerts -alias zode64 -file server.cer -keystore cacerts.jks -keypass changeit
 
+```
+
+For removing the keystore and certificates created above
+
+```shell
+
 keytool -delete -alias zode64 -keystore cacerts.jks
 
 keytool -delete -alias zode64 -keystore keystore.jks
