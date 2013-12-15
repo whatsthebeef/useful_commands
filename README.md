@@ -23,3 +23,17 @@ keytool -delete -alias zode64 -keystore cacerts.jks
 keytool -delete -alias zode64 -keystore keystore.jks
 
 ```
+
+### Generate mapping data with ogr2ogr
+
+Download the cultural vectos from here http://www.naturalearthdata.com/downloads/110m-cultural-vectors/
+
+```shell
+
+ogr2ogr -f GeoJSON subunits.json ne_110m_admin_0_map_subunits.shp
+
+To get iso2 as id and include names - 
+
+opojson --id-property iso_a2 -p name=NAME -p name -o world.json subunits.json
+
+````
