@@ -36,4 +36,8 @@ To get iso2 as id and include names -
 
 opojson --id-property iso_a2 -p name=NAME -p name -o world.json subunits.json
 
+To get all capital cities
+
+ogr2ogr -f GeoJSON -where "FEATURECLA = 'Admin-0 capital'" places.json ne_110m_populated_places.shp
+
 ````
