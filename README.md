@@ -40,4 +40,12 @@ To get all capital cities
 
 ogr2ogr -f GeoJSON -where "FEATURECLA = 'Admin-0 capital'" places.json ne_110m_populated_places.shp
 
-````
+### Generate ubuntu usb boot stick
+
+```shell
+
+hdiutil convert ~/Downloads/ubuntu-12.04.3-desktop-amd64.iso -format UDRW -o ~/Downloads/ubuntu-12.img
+
+diskutil list
+
+
