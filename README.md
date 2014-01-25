@@ -50,4 +50,9 @@ hdiutil convert ~/Downloads/ubuntu-12.04.3-desktop-amd64.iso -format UDRW -o ~/D
 
 diskutil list
 
+diskutil unmountDisk /dev/disk1
+
+sudo dd if=~/Downloads/ubuntu-12.img.dmg of=/dev/rdisk1 bs=1m
+
+```
 
