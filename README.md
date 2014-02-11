@@ -32,11 +32,19 @@ Download the cultural vectos from here http://www.naturalearthdata.com/downloads
 
 ogr2ogr -f GeoJSON subunits.json ne_110m_admin_0_map_subunits.shp
 
+```
+
 To get iso2 as id and include names - 
+
+```shell
 
 topojson --id-property iso_a2 -p name=NAME -p name -o world.json subunits.json
 
+```
+
 To get all capital cities
+
+```shell
 
 ogr2ogr -f GeoJSON -where "FEATURECLA = 'Admin-0 capital'" places.json ne_110m_populated_places.shp
 
